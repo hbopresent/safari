@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Safari</title>
+    <link rel="stylesheet" href="app/styles/css/normalize.css"/>
+    <link rel="stylesheet" href="app/styles/css/main.css"/>
+    <link rel="stylesheet" href="app/styles/css/safari.css"/>
+  </head>
+  <body>
+    <div class="container">
+      <div class="iphone">
+        <div class="iphone--screen">
+          <header class="screen--header">
+            <div class="signal">
+              <span class="signal--power"></span>
+              <span class="signal--power"></span>
+              <span class="signal--power"></span>
+              <span class="signal--power"></span>
+              <span class="signal--power"></span>
+            </div>
+            <div class="serviceProvider">中華電信</div>
+            <div class="signalType">4G</div>
+            <div class="time">
+              <input type="text" class="day" value="上午"/>
+              <input type="text" class="hour" value="9"/>
+              <span>:</span>
+              <input type="text" class="minute"  id="timeMinute" value="38"/>
+            </div>
+            <input type="text" class="powerLeft" value="80%"/>
+            <div class="power">
+              <div class="power--body"></div>
+              <div class="power--head"></div>
+            </div>
+          </header>
+          <!-- safari view -->
+          <div class="screen--view" id="firstFilm">
+            <div class="safari">
+              <header class="safari__header">
+                <div class="safari__header__url" id="safariHeaderUrl">
+                  <svg class="safari__header__url__svg" id="safariHeaderUrlSvg">
+                    <path class="urlSvgPath luckerBody" d="M0 7.5 L0 15 L15 15 L15 7.5 Z"></path>
+                    <path class="urlSvgPath luckerHead" d="M2 7.5 C3 -2, 12 -2, 13 7.5"></path>
+                  </svg>
+                  <div class="safari__header__url__address" id="safariHeaderUrlAdr">google.com.tw</div>
+                </div>
+                <div class="safari__header__progressBar" id="safariHeaderProgressBar"></div>
+              </header>
+              <div class="safari__pageContent">
+                <header class="safari__pageContent__header">
+                  <div class="safari__pageContent__header__leftPart" id="safariPageHeaderLeft">
+                    <div class="safari__pageContent__header__childElement safari__pageContent__header__leftPart__searchAll focusMenuElement">ALL</div>
+                    <div class="safari__pageContent__header__childElement safari__pageContent__header__leftPart__searchImage">IMAGES</div>
+                  </div>
+                  <div class="safari__pageContent__header__rightPart" id="safariPageHeaderRight">
+                    <div class="safari__pageContent__header__childElement safari__pageContent__header__rightPart__googleMenu">
+                      <div class="googleMenu--row">
+                        <div class="googleMenu--grid"></div>
+                        <div class="googleMenu--grid"></div>
+                        <div class="googleMenu--grid"></div>
+                      </div>
+                      <div class="googleMenu--row">
+                        <div class="googleMenu--grid"></div>
+                        <div class="googleMenu--grid"></div>
+                        <div class="googleMenu--grid"></div>
+                      </div>
+                      <div class="googleMenu--row">
+                        <div class="googleMenu--grid"></div>
+                        <div class="googleMenu--grid"></div>
+                        <div class="googleMenu--grid"></div>
+                      </div>
+                    </div>
+                    <div class="safari__pageContent__header__childElement safari__pageContent__header__rightPart__login">
+                      <div class="loginBox">Login</div>
+                    </div>
+                  </div>
+                </header>
+                <div class="safari__pageContent__main">
+                  <div class="safari__pageContent__main__chrome" id="safariChrome">
+                    <div class="chrome--circle"></div>
+                    <svg class="safari__pageContent__main__chrome__svg">
+                      <path class="chromeSvgPath chrome--green" d="M2 36 A50 50 0 0 0 50 100 L50 50 Z"></path>
+                      <path class="chromeSvgPath chrome--red" d="M2 36 A50 50 0 0 1 98 36 L50 50 Z"></path>
+                      <path class="chromeSvgPath chrome--yellow" d="M98 36 A50 50 0 0 1 50 100 L50 50 Z"></path>
+                    </svg>
+                  </div>
+                  <div class="safari__pageContent__main__logo" id="safariMainLogo">
+                    <div class="googleLetter letter--G blueColor">G</div>
+                    <div class="googleLetter letter--o redColor">o</div>
+                    <div class="googleLetter letter--o orangeColor">o</div>
+                    <div class="googleLetter letter--g blueColor">g</div>
+                    <div class="googleLetter letter--l greenColor">l</div>
+                    <div class="googleLetter letter--e redColor">e</div>
+                  </div>
+                  <div class="safari__pageContent__main__searchBar" id="safariPageSearchBar">
+                    <div class="safari__pageContent__main__searchBar__searchIcon" id="safariPageSearchIcon">
+                      <div class="searchIcon__glass" id="safariSearchIconGlass"></div>
+                      <div class="searchIcon__hand" id="safariSearchIconHand"></div>
+                    </div>
+                  </div>
+                </div>
+                <footer class="safari__pageContent__footer">
+                  <div class="safari__pageContent__footer__userLocation">Kaohsiung City, Taiwan</div>
+                </footer>
+              </div>
+              <footer class="safari__footer">
+                <div class="safari__footer--element safari__footer__previous">
+                  <svg class="safari__footer__svg safari__footer__previous__svg" id="safariPreviousSvg">
+                    <path class="svgPathElement safari__footer__svgPathElement" d="M30 5 L10 20 L30 35"></path>
+                  </svg>
+                </div>
+                <div class="safari__footer--element safari__footer__next">
+                  <svg class="safari__footer__svg safari__footer__next__svg" id="safariNextSvg">
+                    <path class="svgPathElement safari__footer__svgPathElement" d="M30 5 L10 20 L30 35"></path>
+                  </svg>
+                </div>
+                <div class="safari__footer--element safari__footer__share">
+                  <svg class="safari__footer__svg safari__footer__share__svg" id="safariShareSvg">
+                    <path class="svgPathElement safari__footer__svgPathElement" d="M15 15 L10 15 L10 35 L30 35 L30 15 L25 15"></path>
+                    <path class="svgPathElement safari__footer__svgPathElement" d="M20 25 L20 5"></path>
+                    <path class="svgPathElement safari__footer__svgPathElement" d="M12.5 11 L20 5 L27.5 11"></path>
+                  </svg>
+                </div>
+                <div class="safari__footer--element safari__footer__bookmark">
+                  <svg class="safari__footer__svg safari__footer__bookmark__svg" id="safariBookmarkSvg">
+                    <path class="svgPathElement safari__footer__svgPathElement" d="M5 12.5 Q12.5 2.5 20 12.5"></path>
+                    <path class="svgPathElement safari__footer__svgPathElement" d="M20 12.5 Q27.5 2.5 35 12.5"></path>
+
+                    <path class="svgPathElement safari__footer__svgPathElement" d="M5 32.5 Q12.5 22.5 20 32.5"></path>
+                    <path class="svgPathElement safari__footer__svgPathElement" d="M20 32.5 Q27.5 22.5 35 32.5"></path>
+
+                    <path class="svgPathElement safari__footer__svgPathElement" d="M5 12.5 L5 32.5"></path>
+                    <path class="svgPathElement safari__footer__svgPathElement" d="M20 12.5 L20 32.5"></path>
+                    <path class="svgPathElement safari__footer__svgPathElement" d="M35 12.5 L35 32.5"></path>
+                  </svg>
+                </div>
+                <div class="safari__footer--element safari__footer__switchPage">
+                  <svg class="safari__footer__svg safari__footer__switchPage__svg" id="safariSwitchPageSvg">
+                    <path class="svgPathElement safari__footer__svgPathElement" d="M7.5 12.5 L7.5 32.5 L27.5 32.5 L27.5 12.5 Z"></path>
+                    <path class="svgPathElement safari__footer__svgPathElement" d="M12.5 12.5 L12.5 7.5 L32.5 7.5 L32.5 27.5 L27.5 27.5"></path>
+                  </svg>
+                </div>
+              </footer>
+            </div>
+
+          </div>
+        </div>
+        <div class="iphone--earphone"></div>
+        <div class="iphone--camera"></div>
+        <div class="iphone--homeButton"></div>
+      </div>
+    </div>
+    <script src="app/script/js/safari.js"></script>
+  </body>
+</html>
